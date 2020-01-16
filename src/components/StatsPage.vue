@@ -90,6 +90,7 @@
     },
     data() {
       return {
+        backend_url: 'http://cb-heroku.herokuapp.com/api/reports',
         reportInfo: Object,
         columns: [],
         rawData: [],
@@ -170,7 +171,7 @@
           }
           this.tableLoading = true;
           axios.get(
-            'http://localhost:9090/api/reports?reportType=' + reportType + groupByString,
+            this.backend_url + ' ?reportType= ' + reportType + groupByString,
             {
               auth: { username: 'user', password: 'password' },
               timeout: 5000
