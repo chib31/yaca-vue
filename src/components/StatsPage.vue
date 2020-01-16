@@ -171,7 +171,7 @@
           }
           this.tableLoading = true;
           axios.get(
-            this.backend_url + ' ?reportType= ' + reportType + groupByString,
+            this.backend_url + '?reportType=' + reportType + groupByString,
             {
               auth: { username: 'user', password: 'password' },
               timeout: 5000
