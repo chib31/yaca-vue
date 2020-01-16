@@ -90,7 +90,7 @@
     },
     data() {
       return {
-        backend_url: 'http://cb-heroku.herokuapp.com/api/reports',
+        backend_url: 'https://cb-heroku.herokuapp.com/api/reports',
         reportInfo: Object,
         columns: [],
         rawData: [],
